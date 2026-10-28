@@ -1,25 +1,25 @@
 class Onefolder < Formula
   desc "Sync local folders to OneDrive and external drives with rclone, from a calm terminal app for macOS, Linux and WSL"
   homepage "https://github.com/boraoku/onefolder"
-  version "0.3.0"
+  version "0.3.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/boraoku/onefolder/releases/download/v0.3.0/onefolder-aarch64-apple-darwin.tar.xz"
-      sha256 "f7283fa749755e75ec07cf47dd8cd7e05a6f846e7f29ff982af407c8187975d5"
+      url "https://github.com/boraoku/onefolder/releases/download/v0.3.1/onefolder-aarch64-apple-darwin.tar.xz"
+      sha256 "3c83a8c5e8989e2b60d7b96cb51df30b647c92c585be852d24bdea5cf85a0a8c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/boraoku/onefolder/releases/download/v0.3.0/onefolder-x86_64-apple-darwin.tar.xz"
-      sha256 "8359234c4be4be3b8e7fa33fe7749e5f1e04f431f59d56dfb5ac18e14ff63fbb"
+      url "https://github.com/boraoku/onefolder/releases/download/v0.3.1/onefolder-x86_64-apple-darwin.tar.xz"
+      sha256 "66d250e804550c4ad39c1bbde2ff0ff17111b67c4822a27d3bbb6c16bf00c9fa"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/boraoku/onefolder/releases/download/v0.3.0/onefolder-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5adf44aff0dbcdafd06d835fb79b8905f0cd5007d822d51c9bea6ca7116e301e"
+      url "https://github.com/boraoku/onefolder/releases/download/v0.3.1/onefolder-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d11b5f7b5b7299aa49fa9631f5a8d7b29a853feb6cd278001fcba36716fc85e8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/boraoku/onefolder/releases/download/v0.3.0/onefolder-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "f909f13580e0a489fcd23d88aedaff873ab1a977f3a01e72bab425995e525977"
+      url "https://github.com/boraoku/onefolder/releases/download/v0.3.1/onefolder-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0cb37874c363500e8f6d36f372d618f1de5ba9e7f29292a5f2e1a20ea6af6683"
     end
   end
   license "MIT"
