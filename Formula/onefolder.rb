@@ -1,25 +1,25 @@
 class Onefolder < Formula
-  desc "Sync local folders to OneDrive and external drives with rclone, from a calm terminal app for macOS, Linux and WSL"
+  desc "Sync local folders to OneDrive and external drives with rclone, from a calm terminal app for macOS, Linux and Windows"
   homepage "https://github.com/boraoku/onefolder"
-  version "0.4.2"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/boraoku/onefolder/releases/download/v0.4.2/onefolder-aarch64-apple-darwin.tar.xz"
-      sha256 "0c7d66ba5e342bc513a07ff955349132fd178bf923937a0aa60a03eaa0136df4"
+      url "https://github.com/boraoku/onefolder/releases/download/v0.5.0/onefolder-aarch64-apple-darwin.tar.xz"
+      sha256 "1fb3ffc472e2e466858f167ff6dc5c6296c092e7c9ae13b43463e08eb8fd4341"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/boraoku/onefolder/releases/download/v0.4.2/onefolder-x86_64-apple-darwin.tar.xz"
-      sha256 "205b5fc1ba42284a1075defdf0b2373c4eddf7278fbf0351235f979c28eda22b"
+      url "https://github.com/boraoku/onefolder/releases/download/v0.5.0/onefolder-x86_64-apple-darwin.tar.xz"
+      sha256 "ec7c82ad7a44d16d190b88ff733c72b319a1958c601f270a0c78dc7d7dbbebae"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/boraoku/onefolder/releases/download/v0.4.2/onefolder-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "adbaa327ceeaf2842b92c1479e6504d33ef5f57285535dbea7b9472e8bafa60e"
+      url "https://github.com/boraoku/onefolder/releases/download/v0.5.0/onefolder-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "73e25ca2b09379a7eeb344347c7a571c3f7d00a50b10ebb1f34a566b24dd89bd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/boraoku/onefolder/releases/download/v0.4.2/onefolder-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "f94755183b4033e5e7838bced4612079f5dcf787b7a9770a6688afcece9907ed"
+      url "https://github.com/boraoku/onefolder/releases/download/v0.5.0/onefolder-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "80d207702af00235beb0ff44faec7eb053945d4dfbe3183eb83aaf1e303837bb"
     end
   end
   license "MIT"
@@ -29,6 +29,7 @@ class Onefolder < Formula
     "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
     "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
     "x86_64-unknown-linux-gnu":  {},
   }.freeze
 
